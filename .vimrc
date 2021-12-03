@@ -165,10 +165,10 @@ function ToggleWrap()
 endfunction
 
 " move through split windows
-nmap <leader><Up> :wincmd k<CR>
-nmap <leader><Down> :wincmd j<CR>
-nmap <leader><Left> :wincmd h<CR>
-nmap <leader><Right> :wincmd l<CR>
+nmap <C-k><C-w> :wincmd k<CR>
+nmap <C-j><C-w> :wincmd j<CR>
+nmap <C-h><C-w> :wincmd h<CR>
+nmap <C-l><C-w> :wincmd l<CR>
 
 " move through buffers
 nmap <leader>[ :bp!<CR>
@@ -210,7 +210,7 @@ map <leader>t :TagbarToggle<CR>
 " copy, cut and paste
 vmap <C-c> "+y
 vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
+vmap <C-v> <ESC>"+p
 imap <C-v> <ESC>"+pa
 
 " disable autoindent when pasting text
